@@ -4,7 +4,11 @@ local keymap = vim.keymap
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- 使用 mplayer 播放 WAV 文件
+vim.api.nvim_set_keymap('n', '<leader>pw', ':Dispatch mplayer %<CR>', { noremap = true, silent = true })
+
 -- 使用 <Leader>mp 启动 Markdown 预览
+
 map('n', '<Leader>mp', ':MarkdownPreview<CR>', opts)
 map('n', '<Leader>ms', ':MarkdownPreviewStop<CR>', opts)
 map('n', '<Leader>mt', ':MarkdownPreviewToggle<CR>', opts)

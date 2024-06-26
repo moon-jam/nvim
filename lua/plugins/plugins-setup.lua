@@ -29,6 +29,8 @@ return require('packer').startup(function(use)
 
     use 'kyazdani42/nvim-web-devicons'
 
+    use 'tpope/vim-dispatch'
+
     -- Markdown 语法高亮和扩展支持
     use {
         'plasticboy/vim-markdown',
